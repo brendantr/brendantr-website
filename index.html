@@ -22,7 +22,11 @@
     <nav class="site-nav" id="site-navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Featured</a></li>
             <li><a href="evolution.html">Personal Evolution</a></li>
             <li><a href="achievements.html">Personal Highlights</a></li>
             <li><a href="https://github.com/brendantr">GitHub</a></li>
@@ -31,13 +35,112 @@
 
     <main>
         <section class="hero">
-            <p class="eyebrow">Welcome</p>
-            <h1>Designing thoughtful mobile experiences and growing as an engineer.</h1>
-            <p>I'm Brendan, a computer engineering student in Orlando who loves building iOS apps with Swift and SwiftUI. This site is a snapshot of my work, my story, and the activities that shaped me.</p>
+            <div class="hero-content">
+                <p class="eyebrow">Professional Profile</p>
+                <h1>Brendan Trepanier</h1>
+                <p class="hero-role">Computer engineering student — iOS developer — Orlando, Florida</p>
+                <p>I'm Brendan, an engineering student who loves building thoughtful iOS experiences with Swift and SwiftUI. I blend product design, hardware curiosity, and community leadership to ship work that feels human and useful.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="https://www.linkedin.com/in/brendantr/">Connect on LinkedIn</a>
+                    <a class="button" href="https://github.com/brendantr">View GitHub</a>
+                </div>
+                <ul class="meta-list">
+                    <li>Open to iOS internships, product design collaborations, and mentorship opportunities.</li>
+                    <li>Focused on SwiftUI, embedded systems labs, and building community-centered tools.</li>
+                </ul>
+            </div>
+            <aside class="profile-card">
+                <div class="avatar" aria-hidden="true">BT</div>
+                <h2>At a glance</h2>
+                <ul class="quick-list">
+                    <li><strong>Location:</strong> Orlando, FL</li>
+                    <li><strong>Top focus:</strong> SwiftUI, Core ML, embedded systems</li>
+                    <li><strong>Leadership:</strong> student teams, peer mentorship</li>
+                </ul>
+                <p class="profile-note">Explore more of my story through <a href="evolution.html">personal evolution</a> and <a href="achievements.html">highlights</a>.</p>
+            </aside>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>I care about the intersection of engineering and people. Whether I'm prototyping a mobile app or experimenting with hardware sensors, I focus on clarity, empathy, and iterative learning. My goal is to keep growing as a builder who can translate technical ideas into approachable experiences.</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="stack">
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Founder &amp; iOS Developer</h3>
+                            <p class="item-meta">Simulisten — Present</p>
+                        </div>
+                        <span class="item-meta">Orlando, FL</span>
+                    </div>
+                    <ul class="detail-list">
+                        <li>Designing and shipping SwiftUI-based experiences focused on calm, focused listening.</li>
+                        <li>Iterating on product strategy, user research, and visual design to keep the experience human.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Engineering Student Projects</h3>
+                            <p class="item-meta">University labs &amp; coursework</p>
+                        </div>
+                        <span class="item-meta">Hardware + software</span>
+                    </div>
+                    <ul class="detail-list">
+                        <li>Built embedded systems labs combining sensors, microcontrollers, and real-time data.</li>
+                        <li>Collaborated on team-based prototypes that merge user needs with technical constraints.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Community Leadership</h3>
+                            <p class="item-meta">Mentorship &amp; student leadership</p>
+                        </div>
+                        <span class="item-meta">Orlando, FL</span>
+                    </div>
+                    <ul class="detail-list">
+                        <li>Supported peers through mentoring, workshops, and collaborative study sessions.</li>
+                        <li>Created inclusive spaces for new engineers to share progress and stay accountable.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="stack">
+                <article class="card">
+                    <h3>University of Central Florida</h3>
+                    <p class="item-meta">B.S. Computer Engineering — In progress</p>
+                    <p>Focused on circuits, embedded systems, and human-centered product design.</p>
+                </article>
+                <article class="card">
+                    <h3>Community College Foundations</h3>
+                    <p class="item-meta">Engineering fundamentals &amp; transfer pathway</p>
+                    <p>Built a strong technical base while balancing academics with leadership and service.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="pill-list">
+                <li>Swift &amp; SwiftUI</li>
+                <li>iOS Prototyping</li>
+                <li>Embedded Systems</li>
+                <li>Product Design</li>
+                <li>User Research</li>
+                <li>Mentorship &amp; Leadership</li>
+            </ul>
         </section>
 
         <section id="portfolio" class="section">
-            <h2>Portfolio</h2>
+            <h2>Featured</h2>
             <p>A quick look at the kinds of projects I love to ship. Each project blends engineering, design, and curiosity.</p>
             <div class="grid">
                 <article class="card">
@@ -56,29 +159,29 @@
         </section>
 
         <section class="section">
-            <h2>Current Focus</h2>
-            <ul class="pill-list">
-                <li>Swift &amp; SwiftUI</li>
-                <li>Computer Engineering</li>
-                <li>Product Design</li>
-                <li>Leadership &amp; Mentorship</li>
-                <li>Community Building</li>
-            </ul>
-        </section>
-
-        <section class="section">
             <h2>Explore More</h2>
-            <p>Read about my personal evolution through young adulthood or dive into the achievements and activities that shaped my path.</p>
-            <p>
-                <a href="evolution.html">Personal Evolution</a>
-                &nbsp;|&nbsp;
-                <a href="achievements.html">Personal Highlights</a>
-            </p>
+            <div class="grid">
+                <article class="card">
+                    <h3>Personal Evolution</h3>
+                    <p>Read about how my early experiences shaped my work ethic and creative mindset.</p>
+                    <p><a href="evolution.html">View the story</a></p>
+                </article>
+                <article class="card">
+                    <h3>Personal Highlights</h3>
+                    <p>See the activities, achievements, and leadership moments that keep me grounded.</p>
+                    <p><a href="achievements.html">View highlights</a></p>
+                </article>
+                <article class="card">
+                    <h3>Let’s Collaborate</h3>
+                    <p>Interested in iOS, design, or community projects? I’d love to connect.</p>
+                    <p><a href="https://www.linkedin.com/in/brendantr/">Send a LinkedIn message</a></p>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>Want to collaborate? Reach me via <a href="https://github.com/brendantr">GitHub</a> or share ideas at <a href="http://simulisten.com">Simulisten</a>.</p>
+        <p>Want to collaborate? Reach me via <a href="https://www.linkedin.com/in/brendantr/">LinkedIn</a> or explore my work on <a href="https://github.com/brendantr">GitHub</a>.</p>
     </footer>
 
     <script src="menu.js"></script>

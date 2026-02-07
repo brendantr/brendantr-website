@@ -3,34 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brendan - iOS Developer & Engineer</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: #f5f5f7;
-        }
-        h1 { color: #1d1d1f; }
-        .links { margin-top: 2rem; }
-        .links a {
-            display: inline-block;
-            margin-right: 1rem;
-            color: #007AFF;
-            text-decoration: none;
-        }
-    </style>
+    <title>Brendan - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Brendan</h1>
-    <p>iOS Developer | Computer Engineer | Orlando, FL</p>
-    <p>Building mobile experiences with Swift & SwiftUI.</p>
-    
-    <div class="links">
-        <a href="https://github.com/brendantr">GitHub</a>
-        <a href="http://simulisten.com">Simulisten</a>
-    </div>
+    <header class="site-header">
+        <div>
+            <span class="brand-name">Brendan</span>
+            <span class="brand-tagline">Computer Engineering Student &amp; iOS Developer</span>
+        </div>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <nav class="site-nav" id="site-navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="evolution.html">Personal Evolution</a></li>
+            <li><a href="achievements.html">Personal Highlights</a></li>
+            <li><a href="https://github.com/brendantr">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">Welcome</p>
+            <h1>Designing thoughtful mobile experiences and growing as an engineer.</h1>
+            <p>I'm Brendan, a computer engineering student in Orlando who loves building iOS apps with Swift and SwiftUI. This site is a snapshot of my work, my story, and the activities that shaped me.</p>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>A quick look at the kinds of projects I love to ship. Each project blends engineering, design, and curiosity.</p>
+            <div class="grid">
+                <article class="card">
+                    <h3>iOS App Experiments</h3>
+                    <p>Prototypes exploring SwiftUI, Core ML, and playful interactions.</p>
+                </article>
+                <article class="card">
+                    <h3>Hardware + Software Labs</h3>
+                    <p>Engineering coursework focused on embedded systems, sensors, and electronics.</p>
+                </article>
+                <article class="card">
+                    <h3>Community Projects</h3>
+                    <p>Collaborations with classmates and local organizations to solve real problems.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Current Focus</h2>
+            <ul class="pill-list">
+                <li>Swift &amp; SwiftUI</li>
+                <li>Computer Engineering</li>
+                <li>Product Design</li>
+                <li>Leadership &amp; Mentorship</li>
+                <li>Community Building</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Explore More</h2>
+            <p>Read about my personal evolution through young adulthood or dive into the achievements and activities that shaped my path.</p>
+            <p>
+                <a href="evolution.html">Personal Evolution</a>
+                &nbsp;|&nbsp;
+                <a href="achievements.html">Personal Highlights</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Want to collaborate? Reach me via <a href="https://github.com/brendantr">GitHub</a> or share ideas at <a href="http://simulisten.com">Simulisten</a>.</p>
+    </footer>
+
+    <script src="menu.js"></script>
 </body>
 </html>

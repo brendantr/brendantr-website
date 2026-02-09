@@ -1,6 +1,7 @@
 (() => {
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.site-nav');
+    const closeButton = nav ? nav.querySelector('.nav-close') : null;
 
     if (!toggle || !nav) {
         return;
@@ -27,6 +28,10 @@
             document.removeEventListener('keydown', handleKeydown);
         }
     });
+
+    if (closeButton) {
+        closeButton.addEventListener('click', closeMenu);
+    }
 
     nav.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', closeMenu);
